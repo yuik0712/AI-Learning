@@ -1,4 +1,12 @@
 #### Improved DDPM(Nichol & Dhariwal, 2021)
 
+Abstract 
+- Improved Log-Likelihoods: 코사인 스케줄(Cosine Schedule) 도입 등 간단한 수정만으로도 생성 모델의 주요 지표인 로그 우도 성능을 대폭 향상시킴.
+- Learned Variances & Fast Sampling: 역확산 과정의 분산을 고정하지 않고 학습 가능하게 만들어, 샘플링 시 필요한 단계를 1/10 수준으로 줄이면서도 퀄리티 유지함.
+- Precision & Recall Analysis: GAN과의 비교를 통해 DDPM이 대상 분포를 얼마나 다양하고 정확하게 커버하는지 정밀도와 재현율 지표로 증명함.
+- Model Scalability: 연산량과 모델 크기를 키울수록 성능이 일정하게 향상되는 '스케일링 법칙'이 Diffusion 모델에서도 잘 작동함을 확인
+
+Introduction 
+
 
 보다 자세한 설명: https://arxiv.org/abs/2102.09672
